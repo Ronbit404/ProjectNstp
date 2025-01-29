@@ -265,17 +265,21 @@ body {
   }
 
   .logo-placeholder img {
-    width: 60px;
+    width: 20px;
   }
 
   .container {
+    margin-top: 20px;
     height: auto;
     padding-bottom: 20px;
   }
 
   .title {
-    font-size: 2em;
+    font-size: 1em;
     top: 20%;
+  }
+  .carousel-text{
+    font-size: 0.5em;
   }
 
   .subtitle {
@@ -283,14 +287,9 @@ body {
   }
 
   .button {
-    padding: 12px 25px;
-    font-size: 14px;
+    visibility: hidden ;
   }
 }
-
-
-
-
 
 
 .footer {
