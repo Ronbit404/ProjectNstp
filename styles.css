@@ -8,8 +8,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   overflow-x: hidden;
-  background-color: #fafafa; /* Slightly off-white background for softness */
-  color: #333; /* Dark text for better contrast */
+  background-color: #fafafa;
+  color: #333;
 }
 
 .navbar {
@@ -210,13 +210,13 @@ body {
   margin-top: 50px;
   z-index: 1;
   transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .button:hover {
   background-color: white;
   color: #66BB6A;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile responsiveness */
@@ -241,7 +241,7 @@ body {
   }
 
   .nav-links.active {
-    display: flex; /* Display when 'active' class is added */
+    display: flex;
   }
 
   .nav-links li {
@@ -249,19 +249,18 @@ body {
     font-size: 16px;
   }
 
-  /* Positioning the hamburger menu to the bottom-right */
   .menu-toggle {
     display: block;
     font-size: 30px;
     color: white;
     cursor: pointer;
-    position: fixed;  /* Fixed position to stay at the bottom right */
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px;  /* Distance from the right */
-    z-index: 10;  /* Ensure it's on top of other elements */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px;  /* Padding around the icon */
-    border-radius: 5px;  /* Rounded corners */
+    position: fixed;  
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;  
+    border-radius: 5px;  
   }
 
   .logo-placeholder img {
@@ -304,7 +303,7 @@ body {
   width: 100%;
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2); /* Shadow on footer */
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-left,
@@ -359,12 +358,12 @@ body {
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adding shadow */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-nav button:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); 
 }
 
 
@@ -386,7 +385,7 @@ body {
 
 .context-section.visible {
     opacity: 1; /* Make it fully visible */
-    transform: translateY(0); /* Bring it into place */
+    transform: translateY(0); 
 }
 
 .context-section h3 {
@@ -410,9 +409,9 @@ body {
  /* Fraud Statistics Section */
 .fraud {
     display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap into multiple rows */
-    justify-content: space-evenly; /* Distributes cards evenly in a row */
-    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    gap: 30px; 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Centers the grid */
@@ -420,7 +419,7 @@ body {
 }
 
 .card {
-    background: linear-gradient(45deg, #66BB6A, #4CAF50); /* Green color scheme */
+    background: linear-gradient(45deg, #66BB6A, #4CAF50); 
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -432,8 +431,8 @@ body {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    flex: 1 1 calc(25% - 30px); /* Each card takes up 25% of the available width minus the gap */
-    min-width: 280px; /* Ensures that cards are not too narrow */
+    flex: 1 1 calc(25% - 30px); 
+    min-width: 280px;
 }
 
 .card:hover {
@@ -505,17 +504,17 @@ body {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .fraud {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts for smaller screens */
-        gap: 20px; /* Decrease space between cards on smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px;
     }
 
     .card {
-        flex: 1 1 calc(50% - 20px); /* Adjust card width for smaller screens */
-        padding: 20px; /* Reduce padding for smaller cards */
+        flex: 1 1 calc(50% - 20px); 
+        padding: 20px; 
     }
 
     .icon {
-        font-size: 30px; /* Adjust icon size for smaller screens */
+        font-size: 30px; 
     }
 
     .counter {
