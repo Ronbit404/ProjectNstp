@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridging Digital Awareness</title>
+  <link rel="stylesheet" href="C:\Users\Aron\Desktop\NSTP Website\styles.css">
+</head>
+<body>
+
+<div class="logo-placeholder">
+  <a href="https://www.facebook.com/ucpncofficial" target="_blank"> 
+    <img src="C:\Users\Aron\Desktop\NSTP Website\images\logo.png" alt="Logo">
+  </a>
+</div>
+
+<nav class="navbar">
+  <ul class="nav-links" onmouseleave="hideCursor()">
+    <div class="cursor" id="cursor"></div>
+    <li class="tab" onmouseenter="moveCursor(this)">Home</li>
+    <li class="tab" onmouseenter="moveCursor(this)">About</li>
+    <li class="tab" onmouseenter="moveCursor(this)">Prevention Tips</li>
+    <li class="tab" onmouseenter="moveCursor(this)">Contact Us</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1 class="title">Bridging Digital Awareness</h1>
+  <p class="subtitle">We are students of University of Cabuyao</p>
+  <button class="button">Learn more About us</button>
+  
+  <div class="carousel">
+    <div class="carousel-images" id="carousel-images">
+      <img src="C:\Users\Aron\Desktop\NSTP Website\images\carousel/carousel1.png" class="active" alt="Slide 1">
+      <img src="C:\Users\Aron\Desktop\NSTP Website\images\carousel/carousel2.png" alt="Slide 2">
+      <img src="C:\Users\Aron\Desktop\NSTP Website\images\carousel/carousel3.png" alt="Slide 3">
+    </div>
+    <div class="carousel-text" id="carousel-text"></div>
+    <div class="carousel-nav">
+      <button id="prev" onclick="showPrevSlide()">&#8592;</button>
+      <button id="next" onclick="showNextSlide()">&#8594;</button>
+    </div>
+  </div>
+</div>
+
+<!-- Digital Literacy and Fraud Context -->
+<section class="context-section">
+  <h2>Understanding Fraud and the Importance of Digital Literacy</h2>
+  <p class="context-text">
+    The Philippines has seen a significant increase in various forms of digital fraud, including online scams, identity theft, credit card fraud, and phishing attacks. As more people rely on the internet for financial transactions and daily communication, the need for digital literacy has become more critical than ever.
+  </p>
+  <p class="context-text">
+    Digital literacy involves understanding how to navigate online spaces safely, recognize fraudulent activities, and protect personal information. It empowers individuals to take control of their digital presence and avoid falling victim to fraud. Awareness of these risks and developing the skills to detect and prevent scams can help create a safer online environment for everyone.
+  </p>
+</section>
+
+<section class="context-section">
+  <h3>Trivia on Digital Fraud Awareness</h3>
+  <ul>
+    <li>Over 60% of online fraud victims in the Philippines were unaware of the scams before they occurred.</li>
+    <li>Identity theft is one of the most common forms of online fraud in the country.</li>
+    <li>Digital literacy programs have helped reduce scam rates by over 15% in some regions.</li>
+  </ul>
+</section>
+
+<!-- Fraud Statistics Section -->
+<div class="fraud-title">
+    <h2>Philippine's Fraud Statistics 2023</h2>
+</div>
+
+<div class="fraud">
+    <div class="card">
+        <div class="icon">🕵️♂️</div>
+        <div class="counter" data-target="23500">0</div>
+        <div class="fraud-title">Reported Cases</div>
+        <div class="description">2023 Financial Fraud Incidents</div>
+    </div>
+
+    <div class="card">
+        <div class="icon floating">💸</div>
+        <div class="counter" data-target="186">0B</div>
+        <div class="fraud-title">Peso Loss</div>
+        <div class="description">Total Estimated Financial Damage</div>
+    </div>
+
+    <div class="card">
+        <div class="icon">📱</div>
+        <div class="counter" data-target="63">0%</div>
+        <div class="fraud-title">Digital Fraud</div>
+        <div class="description">Percentage of Online Transactions</div>
+    </div>
+
+    <div class="card">
+        <div class="icon floating">👥</div>
+        <div class="counter" data-target="42">0%</div>
+        <div class="fraud-title">Recovery Rate</div>
+        <div class="description">Successful Fund Retrieval</div>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-left">
+    <p>&copy; 2025 Bridging Digital Awareness. All rights reserved.</p>
+    <p>University of Cabuyao, Philippines</p>
+  </div>
+  <div class="footer-right">
+    <div class="social-icons">
+      <a href="" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/128/4701/4701482.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="" target="_blank" title="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="Twitter" class="social-icon">
+      </a>
+      <a href="" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="C:\Users\Aron\Desktop\NSTP Website\scripts.js"></script>
+<script src="C:\Users\Aron\Desktop\NSTP Website\animation.js"></script>
+</body>
+</html>
