@@ -219,7 +219,7 @@ body {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
 }
 
-/* Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px;
@@ -227,14 +227,41 @@ body {
   }
 
   .nav-links {
+    display: none; /* Hidden by default */
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Display when 'active' class is added */
   }
 
   .nav-links li {
     padding: 10px 20px;
     font-size: 16px;
+  }
+
+  /* Positioning the hamburger menu to the bottom-right */
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: fixed;  /* Fixed position to stay at the bottom right */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px;  /* Distance from the right */
+    z-index: 10;  /* Ensure it's on top of other elements */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;  /* Padding around the icon */
+    border-radius: 5px;  /* Rounded corners */
   }
 
   .logo-placeholder img {
@@ -255,59 +282,14 @@ body {
     font-size: 1.2em;
   }
 
-  .carousel-text {
-    font-size: 1.5rem;
-  }
-
   .button {
     padding: 12px 25px;
     font-size: 14px;
   }
 }
 
-@media (max-width: 480px) {
-  .navbar {
-    padding: 12px;
-    margin-top: 50px;
-  }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
 
-  .nav-links li {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-
-  .logo-placeholder img {
-    width: 50px;
-  }
-
-  .container {
-    padding-bottom: 20px;
-  }
-
-  .title {
-    font-size: 1.8em;
-    top: 15%;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-  }
-
-  .carousel-text {
-    font-size: 1.2rem;
-  }
-
-  .button {
-    padding: 10px 20px;
-    font-size: 12px;
-  }
-}
 
 
 
